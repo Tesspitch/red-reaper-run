@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedReaperRun | TripleR</title>
+    <meta name="description" content="Official website of RedReaperRun (TripleR) running team.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Teko:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo"><img src="../assets/images/RRR_LOGO.png" alt="RRR Logo"></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#members">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1 class="glitch" data-text="RED REAPER RUN"><span class="text-red">R</span>ED <span
+                    class="text-red">R</span>EAPER <span class="text-red">R</span>UN</h1>
+            <p class="subtitle">WE RUN THE NIGHT</p>
+            <a href="#members" class="btn btn-primary">MEET THE SQUAD</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">WHO WE ARE</h2>
+            <div class="about-content">
+                <p>เราเริ่มต้นจากกลุ่มเพื่อน พี่ น้อง ที่เจอกันในสนามซ้อมเดียวกัน
+                    จากคนไม่กี่คนที่ตั้งใจซ้อมเหมือนกัน ค่อย ๆ กลายเป็น Community เล็ก ๆ ที่มีหัวใจเดียวกัน
+                    ชอบสิ่งเดียวกัน และมีไฟในระยะไกลไม่ต่างกัน
+                    พวกเรามองเห็นว่ากลุ่มซ้อมเล็ก ๆ นี้…
+                    ไม่ใช่แค่คนที่มาวิ่งด้วยกัน แต่เป็นคนที่มี ความคิด ความฝัน และความเร็ว ในทิศทางเดียวกัน
+                    เพราะงั้นเราจึงสร้างตัวตนให้ชัดขึ้น
+                    เปลี่ยนจาก กลุ่มคนธรรมดา ให้กลายเป็น ทีมวิ่งที่อาจจะ No Name…
+                    แต่ทุกก้าววิ่ง
+                </p>
+                <p>“ดังยิ่งกว่าเสียงชื่อ”</p>
+                <p>We began as a small group of friends, seniors, and juniors
+                    who happened to train on the same track.
+                    What started as just a few runners became a tight-knit community
+                    sharing the same mindset, the same passion,
+                    and the same fire for long-distance running.
+
+                    Soon, we realized this wasn’t just a training group—
+                    it was a collection of people with aligned goals, aligned energy, and aligned speed.
+
+                    So we decided to give this community a clear identity.
+                    To turn a simple running circle into a team that might be “No Name”…
+                    but runs loud enough that no name is even needed.</p>
+                <h3 style="color: rgba(255, 0, 51, 1)">Quiet Focused Fast</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Members Section -->
+    <section id="members" class="section members">
+        <div class="container">
+            <h2 class="section-title">THE SQUAD</h2>
+            <div class="members-grid">
+                <!-- Managers -->
+                <div class="member-card manager">
+                    <div class="member-img-placeholder">
+                        <img src="../assets/images/p_ter.jpg" alt="พี่เตอร์">
+                    </div>
+                    <div class="member-info">
+                        <h3>เตอร์</h3>
+                        <h3>cop_oliveira</h3>
+                        <p class="role">Team Manager</p>
+                    </div>
+                </div>
+                <div class="member-card manager">
+                    <div class="member-img-placeholder">
+                        <img src="../assets/images/p_oil.jpg" alt="พี่ออย">
+                    </div>
+                    <div class="member-info">
+                        <h3>ออย</h3>
+                        <h3>oilogleoilty</h3>
+                        <p class="role">Team Manager</p>
+                    </div>
+                </div>
+                <!-- Members (12 more) -->
+                <!-- Generating 12 member cards via JS or static for now, let's do static for clarity as requested -->
+                <div class="member-card">
+                    <div class="member-img-placeholder">
+                        <img src="../assets/images/p_mark.jpg" alt="พี่มาร์ค">
+                    </div>
+                    <div class="member-info">
+                        <h3>มาร์ค</h3>
+                        <h3>marka._ratte</h3>
+                        <p class="role">Runner</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-img-placeholder">
+                        <img src="../assets/images/" alt="พี่อาร์ม">
+                    </div>
+                    <div class="member-info">
+                        <h3>อาร์ม</h3>
+                        <h3>aarmnoiy</h3>
+                        <p class="role">Runner</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-img-placeholder">
+                        <img src="../assets/images/mart.jpg" alt="พี่มาร์ช">
+                    </div>
+                    <div class="member-info">
+                        <h3>มาร์ช</h3>
+                        <h3>mart.jsd</h3>
+                        <p class="role">Runner</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-img-placeholder">
+                        <img src="../assets/images/RRR_LOGO.png" alt="ข้าว">
+                    </div>
+                    <div class="member-info">
+                        <h3>ข้าว</h3>
+                        <h3>rice__2547</h3>
+                        <p class="role">Runner</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-img-placeholder">
+                        <img src="../assets/images/RRR_LOGO.png" alt="เขต">
+                    </div>
+                    <div class="member-info">
+                        <h3>เขต</h3>
+                        <h3>_kpes_ps</h3>
+                        <p class="role">Runner</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-img-placeholder">
+                        <img src="../assets/images/RRR_LOGO.png" alt="แอม">
+                    </div>
+                    <div class="member-info">
+                        <h3>แอม</h3>
+                        <h3>aa_amaam</h3>
+                        <p class="role">Runner</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-img-placeholder">
+                        <img src="../assets/images/RRR_LOGO.png" alt="เตอร์">
+                    </div>
+                    <div class="member-info">
+                        <h3>เตอร์</h3>
+                        <h3>lm_ter_</h3>
+                        <p class="role">Runner</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-img-placeholder">
+                        <img src="../assets/images/tes.jpg" alt="เทส">
+                    </div>
+                    <div class="member-info">
+                        <h3>เทส</h3>
+                        <h3>tesspitch</h3>
+                        <p class="role">Runner</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-img-placeholder">
+                        <img src="../assets/images/RRR_LOGO.png" alt="แกรม">
+                    </div>
+                    <div class="member-info">
+                        <h3>แกรม</h3>
+                        <h3>sxgllk.gk</h3>
+                        <p class="role">Runner</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-img-placeholder">
+                        <img src="../assets/images/RRR_LOGO.png" alt="โฟร์">
+                    </div>
+                    <div class="member-info">
+                        <h3>โฟร์</h3>
+                        <h3>_siharaz_</h3>
+                        <p class="role">Runner</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-img-placeholder">
+                        <img src="../assets/images/frank.jpg" alt="แฟรงค์">
+                    </div>
+                    <div class="member-info">
+                        <h3>แฟรงค์</h3>
+                        <h3>fraaangj</h3>
+                        <p class="role">Runner</p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-img-placeholder">
+                        <img src="../assets/images/RRR_LOGO.png" alt="บอล">
+                    </div>
+                    <div class="member-info">
+                        <h3>บอล</h3>
+                        <h3>jiramet_ph</h3>
+                        <p class="role">Runner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">RRR</div>
+                <p>&copy; 2025 RedReaperRun. | TSC Development.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/rrrteam" target="_blank">FB</a>
+                </div>
+                </header>
+
+                <!-- About Section -->
+                <section id="about" class="section about">
+                    <div class="container">
+                        <h2 class="section-title">WHO WE ARE</h2>
+                        <div class="about-content">
+                            <p>เราเริ่มต้นจากกลุ่มเพื่อน พี่ น้อง ที่เจอกันในสนามซ้อมเดียวกัน
+                                จากคนไม่กี่คนที่ตั้งใจซ้อมเหมือนกัน ค่อย ๆ กลายเป็น Community เล็ก ๆ ที่มีหัวใจเดียวกัน
+                                ชอบสิ่งเดียวกัน และมีไฟในระยะไกลไม่ต่างกัน
+                                พวกเรามองเห็นว่ากลุ่มซ้อมเล็ก ๆ นี้…
+                                ไม่ใช่แค่คนที่มาวิ่งด้วยกัน แต่เป็นคนที่มี ความคิด ความฝัน และความเร็ว ในทิศทางเดียวกัน
+                                เพราะงั้นเราจึงสร้างตัวตนให้ชัดขึ้น
+                                เปลี่ยนจาก กลุ่มคนธรรมดา ให้กลายเป็น ทีมวิ่งที่อาจจะ No Name…
+                                แต่ทุกก้าววิ่ง
+                            </p>
+                            <p>“ดังยิ่งกว่าเสียงชื่อ”</p>
+                            <p>We began as a small group of friends, seniors, and juniors
+                                who happened to train on the same track.
+                                What started as just a few runners became a tight-knit community
+                                sharing the same mindset, the same passion,
+                                and the same fire for long-distance running.
+
+                                Soon, we realized this wasn’t just a training group—
+                                it was a collection of people with aligned goals, aligned energy, and aligned speed.
+
+                                So we decided to give this community a clear identity.
+                                To turn a simple running circle into a team that might be “No Name”…
+                                but runs loud enough that no name is even needed.</p>
+                            <h3 style="color: rgba(255, 0, 51, 1)">Quiet Focused Fast</h3>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Members Section -->
+                <section id="members" class="section members">
+                    <div class="container">
+                        <h2 class="section-title">THE SQUAD</h2>
+                        <div class="members-grid">
+                            <!-- Managers -->
+                            <div class="member-card manager">
+                                <div class="member-img-placeholder">
+                                    <img src="../assets/images/p_ter.jpg" alt="พี่เตอร์">
+                                </div>
+                                <div class="member-info">
+                                    <h3>เตอร์</h3>
+                                    <h3>cop_oliveira</h3>
+                                    <p class="role">Team Manager</p>
+                                </div>
+                            </div>
+                            <div class="member-card manager">
+                                <div class="member-img-placeholder">
+                                    <img src="../assets/images/p_oil.jpg" alt="พี่ออย">
+                                </div>
+                                <div class="member-info">
+                                    <h3>ออย</h3>
+                                    <h3>oilogleoilty</h3>
+                                    <p class="role">Team Manager</p>
+                                </div>
+                            </div>
+                            <!-- Members (12 more) -->
+                            <!-- Generating 12 member cards via JS or static for now, let's do static for clarity as requested -->
+                            <div class="member-card">
+                                <div class="member-img-placeholder">
+                                    <img src="../assets/images/p_mark.jpg" alt="พี่มาร์ค">
+                                </div>
+                                <div class="member-info">
+                                    <h3>มาร์ค</h3>
+                                    <h3>marka._ratte</h3>
+                                    <p class="role">Runner</p>
+                                </div>
+                            </div>
+                            <div class="member-card">
+                                <div class="member-img-placeholder">
+                                    <img src="../assets/images/" alt="พี่อาร์ม">
+                                </div>
+                                <div class="member-info">
+                                    <h3>อาร์ม</h3>
+                                    <h3>aarmnoiy</h3>
+                                    <p class="role">Runner</p>
+                                </div>
+                            </div>
+                            <div class="member-card">
+                                <div class="member-img-placeholder">
+                                    <img src="../assets/images/mart.jpg" alt="พี่มาร์ช">
+                                </div>
+                                <div class="member-info">
+                                    <h3>มาร์ช</h3>
+                                    <h3>mart.jsd</h3>
+                                    <p class="role">Runner</p>
+                                </div>
+                            </div>
+                            <div class="member-card">
+                                <div class="member-img-placeholder">
+                                    <img src="../assets/images/RRR_LOGO.png" alt="ข้าว">
+                                </div>
+                                <div class="member-info">
+                                    <h3>ข้าว</h3>
+                                    <h3>rice__2547</h3>
+                                    <p class="role">Runner</p>
+                                </div>
+                            </div>
+                            <div class="member-card">
+                                <div class="member-img-placeholder">
+                                    <img src="../assets/images/RRR_LOGO.png" alt="เขต">
+                                </div>
+                                <div class="member-info">
+                                    <h3>เขต</h3>
+                                    <h3>_kpes_ps</h3>
+                                    <p class="role">Runner</p>
+                                </div>
+                            </div>
+                            <div class="member-card">
+                                <div class="member-img-placeholder">
+                                    <img src="../assets/images/RRR_LOGO.png" alt="แอม">
+                                </div>
+                                <div class="member-info">
+                                    <h3>แอม</h3>
+                                    <h3>aa_amaam</h3>
+                                    <p class="role">Runner</p>
+                                </div>
+                            </div>
+                            <div class="member-card">
+                                <div class="member-img-placeholder">
+                                    <img src="../assets/images/RRR_LOGO.png" alt="เตอร์">
+                                </div>
+                                <div class="member-info">
+                                    <h3>เตอร์</h3>
+                                    <h3>lm_ter_</h3>
+                                    <p class="role">Runner</p>
+                                </div>
+                            </div>
+                            <div class="member-card">
+                                <div class="member-img-placeholder">
+                                    <img src="../assets/images/tes.jpg" alt="เทส">
+                                </div>
+                                <div class="member-info">
+                                    <h3>เทส</h3>
+                                    <h3>tesspitch</h3>
+                                    <p class="role">Runner</p>
+                                </div>
+                            </div>
+                            <div class="member-card">
+                                <div class="member-img-placeholder">
+                                    <img src="../assets/images/RRR_LOGO.png" alt="แกรม">
+                                </div>
+                                <div class="member-info">
+                                    <h3>แกรม</h3>
+                                    <h3>sxgllk.gk</h3>
+                                    <p class="role">Runner</p>
+                                </div>
+                            </div>
+                            <div class="member-card">
+                                <div class="member-img-placeholder">
+                                    <img src="../assets/images/RRR_LOGO.png" alt="โฟร์">
+                                </div>
+                                <div class="member-info">
+                                    <h3>โฟร์</h3>
+                                    <h3>_siharaz_</h3>
+                                    <p class="role">Runner</p>
+                                </div>
+                            </div>
+                            <div class="member-card">
+                                <div class="member-img-placeholder">
+                                    <img src="../assets/images/frank.jpg" alt="แฟรงค์">
+                                </div>
+                                <div class="member-info">
+                                    <h3>แฟรงค์</h3>
+                                    <h3>fraaangj</h3>
+                                    <p class="role">Runner</p>
+                                </div>
+                            </div>
+                            <div class="member-card">
+                                <div class="member-img-placeholder">
+                                    <img src="../assets/images/RRR_LOGO.png" alt="บอล">
+                                </div>
+                                <div class="member-info">
+                                    <h3>บอล</h3>
+                                    <h3>jiramet_ph</h3>
+                                    <p class="role">Runner</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Footer -->
+                <footer id="contact" class="footer">
+                    <div class="container">
+                        <div class="footer-content">
+                            <div class="footer-logo">RRR</div>
+                            <p>&copy; 2025 RedReaperRun. | TSC Development.</p>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/rrrteam" target="_blank">FB</a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+                <!-- Member Modal -->
+                <div id="memberModal" class="modal">
+                    <div class="modal-overlay"></div>
+                    <div class="modal-content">
+                        <button class="modal-close">&times;</button>
+                        <div class="modal-body">
+                            <div class="modal-left">
+                                <img id="modalImage" src="" alt="Member Photo">
+                            </div>
+                            <div class="modal-right">
+                                <h2 id="modalName"></h2>
+                                <h3 id="modalUsername"></h3>
+                                <div class="stats-container">
+                                    <h4>สถิติการวิ่ง</h4>
+                                    <div class="stat-item">
+                                        <span class="stat-label">5K:</span>
+                                        <span class="stat-value" id="stat5k">-</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">10K:</span>
+                                        <span class="stat-value" id="stat10k">-</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">Half Marathon:</span>
+                                        <span class="stat-value" id="statHalf">-</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">Full Marathon:</span>
+                                        <span class="stat-value" id="statFull">-</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>
