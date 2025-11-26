@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Auto scroll 
         function startAutoScroll() {
             stopAutoScroll(); // ← เคลียร์ interval เก่าก่อนทุกครั้ง
-            autoScrollInterval = setInterval(nextSlide, 5000); // 5 วินาทีจริง ๆ
+            autoScrollInterval = setInterval(nextSlide, 3000); // 3 วิ
         }
 
         function stopAutoScroll() {
