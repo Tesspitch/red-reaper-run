@@ -104,31 +104,39 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalClose = modal.querySelector('.modal-close');
     const memberCards = document.querySelectorAll('.member-card');
 
+    // Helper function to update stat visibility
+    const updateStat = (elementId, value) => {
+        const element = document.getElementById(elementId);
+        const parent = element.parentElement; // .stat-item
+
+        if (value && value !== '-' && value.trim() !== '') {
+            element.textContent = value;
+            parent.style.display = 'flex';
+        } else {
+            parent.style.display = 'none';
+        }
+    };
+
     // Open modal when clicking member card
     memberCards.forEach(card => {
         card.addEventListener('click', () => {
             const name = card.dataset.name;
             const username = card.dataset.username;
             const image = card.dataset.image;
-            const stat800m = card.dataset['800m'];
-            const stat1500m = card.dataset['1500m'];
-            const stat3k = card.dataset['3k'];
-            const stat5k = card.dataset['5k'];
-            const stat10k = card.dataset['10k'];
-            const statHalf = card.dataset.half;
-            const statFull = card.dataset.full;
 
             // Populate modal
             document.getElementById('modalName').textContent = name;
             document.getElementById('modalUsername').textContent = username;
             document.getElementById('modalImage').src = image;
-            document.getElementById('stat800m').textContent = stat800m;
-            document.getElementById('stat1500m').textContent = stat1500m;
-            document.getElementById('stat3k').textContent = stat3k;
-            document.getElementById('stat5k').textContent = stat5k;
-            document.getElementById('stat10k').textContent = stat10k;
-            document.getElementById('statHalf').textContent = statHalf;
-            document.getElementById('statFull').textContent = statFull;
+
+            // Update stats conditionally
+            updateStat('stat800m', card.dataset['800m']);
+            updateStat('stat1500m', card.dataset['1500m']);
+            updateStat('stat3k', card.dataset['3k']);
+            updateStat('stat5k', card.dataset['5k']);
+            updateStat('stat10k', card.dataset['10k']);
+            updateStat('statHalf', card.dataset.half);
+            updateStat('statFull', card.dataset.full);
 
             // Show modal
             modal.classList.add('active');
