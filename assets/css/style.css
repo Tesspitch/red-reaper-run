@@ -1876,3 +1876,30 @@ body.modal-open {
         align-items: center;
     }
 }
+/* Mobile Landscape - Show 3 member cards in a row */
+@media (max-width: 896px) and (orientation: landscape) {
+    .members-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .member-card {
+        max-width: 100%;
+    }
+
+    .member-img-placeholder {
+        height: 180px;
+    }
+
+    .member-info {
+        padding: 12px;
+    }
+
+    .member-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .member-info .role {
+        font-size: 0.8rem;
+    }
+}
