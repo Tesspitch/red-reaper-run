@@ -5,8 +5,8 @@
     --color-white: #ffffff;
     --color-light-gray: #e0e0e0;
 
-    --font-heading: 'Teko', sans-serif;
-    --font-body: 'Outfit', sans-serif;
+    --font-heading: 'Teko', 'Kanit', sans-serif;
+    --font-body: 'Outfit', 'Kanit', sans-serif;
 
     --transition-speed: 0.3s;
 }
@@ -1876,6 +1876,7 @@ body.modal-open {
         align-items: center;
     }
 }
+
 /* Mobile Landscape - Show 3 member cards in a row */
 @media (max-width: 896px) and (orientation: landscape) {
     .members-grid {
