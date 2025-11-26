@@ -110,6 +110,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const name = card.dataset.name;
             const username = card.dataset.username;
             const image = card.dataset.image;
+            const stat800m = card.dataset['800m'];
+            const stat1500m = card.dataset['1500m'];
+            const stat3k = card.dataset['3k'];
             const stat5k = card.dataset['5k'];
             const stat10k = card.dataset['10k'];
             const statHalf = card.dataset.half;
@@ -119,6 +122,9 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('modalName').textContent = name;
             document.getElementById('modalUsername').textContent = username;
             document.getElementById('modalImage').src = image;
+            document.getElementById('stat800m').textContent = stat800m;
+            document.getElementById('stat1500m').textContent = stat1500m;
+            document.getElementById('stat3k').textContent = stat3k;
             document.getElementById('stat5k').textContent = stat5k;
             document.getElementById('stat10k').textContent = stat10k;
             document.getElementById('statHalf').textContent = statHalf;
@@ -268,5 +274,89 @@ document.addEventListener('DOMContentLoaded', () => {
         startAutoScroll();
     }
 
+    // Event Modal Functionality
+    const eventModal = document.getElementById('eventModal');
+    const eventModalOverlay = eventModal.querySelector('.modal-overlay');
+    const eventModalClose = eventModal.querySelector('.modal-close');
+    const eventBtns = document.querySelectorAll('.event-btn');
+    const eventModalTitle = document.getElementById('eventModalTitle');
+    const athleteList = document.getElementById('athleteList');
+
+    // Dummy Data for Events
+    const eventData = {
+        'bangsaen21': {
+            title: 'Bangsaen 21',
+            athletes: [
+                { name: 'Copter', distance: '21.1 KM' },
+                { name: 'Oil', distance: '21.1 KM' },
+                { name: 'Mark', distance: '21.1 KM' },
+                { name: 'Tes', distance: '21.1 KM' }
+            ]
+        },
+        'buriram2025': {
+            title: 'Buriram Marathon 2025',
+            athletes: [
+                { name: 'Arm', distance: '42.195 KM' },
+                { name: 'Mart', distance: '21.1 KM' },
+                { name: 'Khao', distance: '10 KM' }
+            ]
+        },
+        'amazingthailand': {
+            title: 'Amazing Thailand Marathon',
+            athletes: [
+                { name: 'Khet', distance: '42.195 KM' },
+                { name: 'Am', distance: '10 KM' },
+                { name: 'Potter', distance: '10 KM' },
+                { name: 'Segram', distance: '21.1 KM' },
+                { name: 'Four', distance: '42.195 KM' },
+                { name: 'Frank', distance: '21.1 KM' },
+                { name: 'Ball', distance: '10 KM' }
+            ]
+        }
+    };
+
+    function openEventModal(eventId) {
+        const data = eventData[eventId];
+        if (!data) return;
+
+        eventModalTitle.textContent = data.title;
+        athleteList.innerHTML = ''; // Clear previous list
+
+        data.athletes.forEach(athlete => {
+            const li = document.createElement('li');
+            li.className = 'athlete-item';
+            li.innerHTML = `
+                <span class="athlete-name">${athlete.name}</span>
+                <span class="athlete-distance">${athlete.distance}</span>
+            `;
+            athleteList.appendChild(li);
+        });
+
+        eventModal.classList.add('active');
+        document.body.classList.add('modal-open');
+    }
+
+    function closeEventModal() {
+        eventModal.classList.remove('active');
+        document.body.classList.remove('modal-open');
+    }
+
+    eventBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const eventId = btn.dataset.eventId;
+            openEventModal(eventId);
+        });
+    });
+
+    eventModalClose.addEventListener('click', closeEventModal);
+    eventModalOverlay.addEventListener('click', closeEventModal);
+
+    // Close on ESC (shared with member modal)
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            if (eventModal.classList.contains('active')) closeEventModal();
+        }
+    });
 
 });

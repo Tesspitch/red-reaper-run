@@ -664,9 +664,7 @@ ul {
 }
 
 /* Navigation Link Fade Animation */
-@keyframes navLinkFade {
-    ```css
-}
+@keyframes navLinkFade {}
 
 .nav-links li {
     opacity: 0;
@@ -710,7 +708,7 @@ ul {
     padding: 10px 25px;
     font-size: 1.1rem;
 }
-}
+
 
 /* Small Mobile (max-width: 480px) */
 @media (max-width: 480px) {
@@ -1130,5 +1128,3 @@ body.modal-open {
         font-size: 1.1rem;
     }
 }
-
-

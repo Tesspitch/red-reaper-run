@@ -1,4 +1,4 @@
-:root {
+﻿:root {
     --color-red: #ff0033;
     --color-black: #0a0a0a;
     --color-dark-gray: #1a1a1a;
@@ -272,9 +272,6 @@ ul {
         clip: rect(60px, 9999px, 40px, 0);
     }
 
-    100% {
-        clip: rect(90px, 9999px, 70px, 0);
-    }
 }
 
 /* Section Common */
@@ -286,13 +283,13 @@ ul {
     font-family: var(--font-heading);
     font-size: 4rem;
     text-align: center;
-    margin-bottom: 60px;
+    margin: 0 auto 60px;
     text-transform: uppercase;
     color: var(--color-white);
     position: relative;
-    display: inline-block;
-    left: 50%;
-    transform: translateX(-50%);
+    display: table;
+    max-width: 100%;
+    word-break: break-word;
 }
 
 .section-title::after {
@@ -331,25 +328,25 @@ ul {
 .members-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    /* การ์ดแคบลง */
+    /* à¸à¸²à¸£à¹Œà¸”à¹à¸„à¸šà¸¥à¸‡ */
     gap: 24px;
     justify-items: center;
-    /* ให้การ์ดแต่ละใบอยู่กลางคอลัมน์ */
+    /* à¹ƒà¸«à¹‰à¸à¸²à¸£à¹Œà¸”à¹à¸•à¹ˆà¸¥à¸°à¹ƒà¸šà¸­à¸¢à¸¹à¹ˆà¸à¸¥à¸²à¸‡à¸„à¸­à¸¥à¸±à¸¡à¸™à¹Œ */
 }
 
 .member-img-placeholder {
     height: 260px;
-    /* เดิม 300px ให้กรอบเตี้ยลงหน่อย */
+    /* à¹€à¸”à¸´à¸¡ 300px à¹ƒà¸«à¹‰à¸à¸£à¸­à¸šà¹€à¸•à¸µà¹‰à¸¢à¸¥à¸‡à¸«à¸™à¹ˆà¸­à¸¢ */
 }
 
 .member-info {
     padding: 16px;
-    /* เดิม 20px ให้การ์ดเล็กลง */
+    /* à¹€à¸”à¸´à¸¡ 20px à¹ƒà¸«à¹‰à¸à¸²à¸£à¹Œà¸”à¹€à¸¥à¹‡à¸à¸¥à¸‡ */
 }
 
 .member-info h3 {
     font-size: 1.5rem;
-    /* เดิม 1.8rem */
+    /* à¹€à¸”à¸´à¸¡ 1.8rem */
 }
 
 
@@ -362,7 +359,7 @@ ul {
     cursor: pointer;
     width: 100%;
     max-width: 260px;
-    /* จำกัดความกว้างการ์ด */
+    /* à¸ˆà¸³à¸à¸±à¸”à¸„à¸§à¸²à¸¡à¸à¸§à¹‰à¸²à¸‡à¸à¸²à¸£à¹Œà¸” */
 }
 
 .member-card:hover {
@@ -678,6 +675,8 @@ body.modal-open {
 
     .section-title {
         font-size: 2.5rem;
+
+
     }
 
     .section {
@@ -810,7 +809,7 @@ body.modal-open {
 
         /* 2 column */
         gap: 12px;
-        /* ช่องไฟลดลงให้การ์ดไม่อึดอัด */
+        /* à¸Šà¹ˆà¸­à¸‡à¹„à¸Ÿà¸¥à¸”à¸¥à¸‡à¹ƒà¸«à¹‰à¸à¸²à¸£à¹Œà¸”à¹„à¸¡à¹ˆà¸­à¸¶à¸”à¸­à¸±à¸” */
     }
 
     .member-card {
@@ -819,7 +818,7 @@ body.modal-open {
 
     .member-img-placeholder {
         height: 200px;
-        /* ลดความสูงลงในจอเล็ก */
+        /* à¸¥à¸”à¸„à¸§à¸²à¸¡à¸ªà¸¹à¸‡à¸¥à¸‡à¹ƒà¸™à¸ˆà¸­à¹€à¸¥à¹‡à¸ */
     }
 
     .member-info {
@@ -1190,7 +1189,7 @@ body.modal-open {
     min-width: 100%;
     position: relative;
     background: var(--color-black);
-    /* ทำให้สไลด์สูงตามอัตราส่วน 16:9 แต่ย่อได้ */
+    /* à¸—à¸³à¹ƒà¸«à¹‰à¸ªà¹„à¸¥à¸”à¹Œà¸ªà¸¹à¸‡à¸•à¸²à¸¡à¸­à¸±à¸•à¸£à¸²à¸ªà¹ˆà¸§à¸™ 16:9 à¹à¸•à¹ˆà¸¢à¹ˆà¸­à¹„à¸”à¹‰ */
     aspect-ratio: 16/9;
 }
 
@@ -1227,14 +1226,14 @@ body.modal-open {
     opacity: 0.9;
 }
 
-/* Hover ให้โชว์ Caption บน Desktop */
+/* Hover à¹ƒà¸«à¹‰à¹‚à¸Šà¸§à¹Œ Caption à¸šà¸™ Desktop */
 @media (hover: hover) {
     .carousel-slide:hover .slide-caption {
         transform: translateY(0);
     }
 }
 
-/* ปุ่มเลื่อนซ้าย/ขวา */
+/* à¸›à¸¸à¹ˆà¸¡à¹€à¸¥à¸·à¹ˆà¸­à¸™à¸‹à¹‰à¸²à¸¢/à¸‚à¸§à¸² */
 .carousel-btn {
     position: absolute;
     top: 50%;
@@ -1257,7 +1256,7 @@ body.modal-open {
     color: #fff;
     font-size: 2.2rem;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
-    /* ให้อ่านง่ายบนภาพ */
+    /* à¹ƒà¸«à¹‰à¸­à¹ˆà¸²à¸™à¸‡à¹ˆà¸²à¸¢à¸šà¸™à¸ à¸²à¸ž */
 }
 
 .carousel-btn.prev {
@@ -1277,7 +1276,7 @@ body.modal-open {
 
 /* ===== RESPONSIVE FOR GALLERY ===== */
 
-/* Tablet ลงไป */
+/* Tablet à¸¥à¸‡à¹„à¸› */
 @media (max-width: 1024px) {
     .gallery {
         padding-top: 70px;
@@ -1303,7 +1302,7 @@ body.modal-open {
     }
 }
 
-/* Tablet / ใหญ่กว่า Mobile เล็กน้อย */
+/* Tablet / à¹ƒà¸«à¸à¹ˆà¸à¸§à¹ˆà¸² Mobile à¹€à¸¥à¹‡à¸à¸™à¹‰à¸­à¸¢ */
 @media (max-width: 768px) {
     .gallery {
         padding-top: 60px;
@@ -1339,7 +1338,7 @@ body.modal-open {
     .slide-caption {
         padding: 18px 14px 10px;
         transform: translateY(0);
-        /* บนจอเล็กให้ Caption โชว์ตลอด */
+        /* à¸šà¸™à¸ˆà¸­à¹€à¸¥à¹‡à¸à¹ƒà¸«à¹‰ Caption à¹‚à¸Šà¸§à¹Œà¸•à¸¥à¸­à¸” */
     }
 
     .slide-caption .caption-main {
@@ -1434,16 +1433,16 @@ body.modal-open {
     }
 }
 
-/* ปรับขนาดกรอบ Gallery ให้พอดีกับรูป 430x537 */
+/* à¸›à¸£à¸±à¸šà¸‚à¸™à¸²à¸”à¸à¸£à¸­à¸š Gallery à¹ƒà¸«à¹‰à¸žà¸­à¸”à¸µà¸à¸±à¸šà¸£à¸¹à¸› 430x537 */
 
-/* กรอบนอกของ carousel */
+/* à¸à¸£à¸­à¸šà¸™à¸­à¸à¸‚à¸­à¸‡ carousel */
 .carousel-container {
     position: relative;
     width: 100%;
     max-width: 470px;
-    /* กว้างสุด = 430px */
+    /* à¸à¸§à¹‰à¸²à¸‡à¸ªà¸¸à¸” = 430px */
     margin: 0 auto;
-    /* จัดให้อยู่กลาง */
+    /* à¸ˆà¸±à¸”à¹ƒà¸«à¹‰à¸­à¸¢à¸¹à¹ˆà¸à¸¥à¸²à¸‡ */
     overflow: hidden;
     border-radius: 10px;
     border: 2px solid var(--color-red);
@@ -1451,21 +1450,21 @@ body.modal-open {
     background: var(--color-black);
 }
 
-/* ตัวสไลด์ – ใช้สัดส่วน 430:537 แทน 16:9 */
+/* à¸•à¸±à¸§à¸ªà¹„à¸¥à¸”à¹Œ â€“ à¹ƒà¸Šà¹‰à¸ªà¸±à¸”à¸ªà¹ˆà¸§à¸™ 430:537 à¹à¸—à¸™ 16:9 */
 .carousel-slide {
     min-width: 100%;
     position: relative;
     background: var(--color-black);
     aspect-ratio: 3 / 4;
-    /* สัดส่วนกรอบตามรูปจริง */
+    /* à¸ªà¸±à¸”à¸ªà¹ˆà¸§à¸™à¸à¸£à¸­à¸šà¸•à¸²à¸¡à¸£à¸¹à¸›à¸ˆà¸£à¸´à¸‡ */
 }
 
-/* รูปด้านในให้เต็มกรอบ */
+/* à¸£à¸¹à¸›à¸”à¹‰à¸²à¸™à¹ƒà¸™à¹ƒà¸«à¹‰à¹€à¸•à¹‡à¸¡à¸à¸£à¸­à¸š */
 .carousel-slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* ถ้าอยากไม่ครอปเปลี่ยนเป็น contain */
+    /* à¸–à¹‰à¸²à¸­à¸¢à¸²à¸à¹„à¸¡à¹ˆà¸„à¸£à¸­à¸›à¹€à¸›à¸¥à¸µà¹ˆà¸¢à¸™à¹€à¸›à¹‡à¸™ contain */
     display: block;
 }
 
@@ -1487,12 +1486,12 @@ body.modal-open {
     }
 }
 
-/* ปรับปุ่ม carousel ให้โปร่งใส ไม่บังภาพ */
+/* à¸›à¸£à¸±à¸šà¸›à¸¸à¹ˆà¸¡ carousel à¹ƒà¸«à¹‰à¹‚à¸›à¸£à¹ˆà¸‡à¹ƒà¸ª à¹„à¸¡à¹ˆà¸šà¸±à¸‡à¸ à¸²à¸ž */
 .carousel-btn {
     background: transparent !important;
-    /* โปร่งใส */
+    /* à¹‚à¸›à¸£à¹ˆà¸‡à¹ƒà¸ª */
     border: 2px solid rgba(255, 255, 255, 0.7);
-    /* ขอบบาง */
+    /* à¸‚à¸­à¸šà¸šà¸²à¸‡ */
     width: 45px;
     height: 45px;
     border-radius: 8px;
@@ -1504,7 +1503,7 @@ body.modal-open {
     transition: all 0.25s ease;
 }
 
-/* Hover ให้เห็นชัดขึ้น (เฉพาะ Desktop) */
+/* Hover à¹ƒà¸«à¹‰à¹€à¸«à¹‡à¸™à¸Šà¸±à¸”à¸‚à¸¶à¹‰à¸™ (à¹€à¸‰à¸žà¸²à¸° Desktop) */
 @media (hover: hover) {
     .carousel-btn:hover {
         background: rgba(255, 255, 255, 0.15);
@@ -1513,7 +1512,7 @@ body.modal-open {
     }
 }
 
-/* ตำแหน่งปุ่มบนมือถือ – ชิดขอบมากขึ้น */
+/* à¸•à¸³à¹à¸«à¸™à¹ˆà¸‡à¸›à¸¸à¹ˆà¸¡à¸šà¸™à¸¡à¸·à¸­à¸–à¸·à¸­ â€“ à¸Šà¸´à¸”à¸‚à¸­à¸šà¸¡à¸²à¸à¸‚à¸¶à¹‰à¸™ */
 @media (max-width: 480px) {
     .carousel-btn.prev {
         left: 8px !important;
@@ -1534,21 +1533,241 @@ body.modal-open {
 @media (max-width: 480px) {
     .members-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        /* 2 คอลัมน์บนมือถือ */
+        /* 2 à¸„à¸­à¸¥à¸±à¸¡à¸™à¹Œà¸šà¸™à¸¡à¸·à¸­à¸–à¸·à¸­ */
         gap: 16px;
     }
 
     .member-card {
         max-width: none;
-        /* ใช้เต็มคอลัมน์ */
+        /* à¹ƒà¸Šà¹‰à¹€à¸•à¹‡à¸¡à¸„à¸­à¸¥à¸±à¸¡à¸™à¹Œ */
     }
 
     .member-img-placeholder {
         height: 200px;
-        /* รูปเตี้ยลงหน่อยให้ไม่ยาวเกิน */
+        /* à¸£à¸¹à¸›à¹€à¸•à¸µà¹‰à¸¢à¸¥à¸‡à¸«à¸™à¹ˆà¸­à¸¢à¹ƒà¸«à¹‰à¹„à¸¡à¹ˆà¸¢à¸²à¸§à¹€à¸à¸´à¸™ */
     }
 
     .member-info h3 {
         font-size: 1.1rem;
+    }
+}
+
+/* ===== UPCOMING EVENTS SECTION ===== */
+.upcoming {
+    background-color: var(--color-black);
+    padding-bottom: 120px;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.event-card {
+    background: var(--color-dark-gray);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed), border-color var(--transition-speed);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(255, 0, 51, 0.2);
+    border-color: var(--color-red);
+}
+
+.event-image {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* ใช้ contain = เห็นทั้งรูป สัดส่วนไม่เพี้ยน */
+    display: block;
+}
+
+.event-card:hover .event-image img {
+    transform: scale(1.1);
+}
+
+.event-date {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--color-red);
+    color: var(--color-white);
+    padding: 8px 12px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.event-date .day {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.event-date .month {
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.event-details {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-name {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--color-white);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.event-info {
+    margin-bottom: 25px;
+    color: var(--color-light-gray);
+    font-size: 1rem;
+}
+
+.event-info p {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.event-card .btn {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 480px) {
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .event-image {
+        height: 180px;
+    }
+}
+
+/* ===== EVENT MODAL ===== */
+.event-modal-content {
+    max-width: 600px;
+}
+
+.event-modal-body {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+}
+
+.event-modal-title {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    color: var(--color-red);
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+}
+
+.athlete-list-container h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-light-gray);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.athlete-list {
+    list-style: none;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/* Scrollbar styling for list */
+.athlete-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.athlete-list::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.athlete-list::-webkit-scrollbar-thumb {
+    background: var(--color-red);
+    border-radius: 3px;
+}
+
+.athlete-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: background 0.3s ease;
+}
+
+.athlete-item:hover {
+    background: rgba(255, 0, 51, 0.1);
+}
+
+.athlete-name {
+    font-size: 1.1rem;
+    color: var(--color-white);
+    font-weight: 500;
+}
+
+.athlete-distance {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: var(--color-red);
+    background: rgba(255, 0, 51, 0.1);
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+@media (max-width: 480px) {
+    .event-modal-title {
+        font-size: 2rem;
+    }
+
+    .athlete-item {
+        padding: 12px;
+    }
+
+    .athlete-name {
+        font-size: 1rem;
     }
 }
